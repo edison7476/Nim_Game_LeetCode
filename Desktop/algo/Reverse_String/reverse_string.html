@@ -5,8 +5,8 @@ var reverseString = function(s) {
   var temp = "";
   for(var i = 0; i< Math.floor((s.length)/2); i++){
       temp = newString[i]
-      newString[i] = newString[s.length - i]
-      newString[s.length - i] = temp
+      newString[i] = newString[s.length - i -1]
+      newString[s.length - i -1] = temp
   }
   var reversedString = newString.join("");
   console.log("Successfully reversed the string: ", reversedString);
